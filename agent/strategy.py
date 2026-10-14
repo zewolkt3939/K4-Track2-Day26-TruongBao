@@ -1,8 +1,8 @@
 """agent/strategy.py — discovery, delegation, caching, replica, and budget
 POLICY. Where `agent/gateway.py` is the control plane (route / admit /
 authorize / budget — the four JOBS a decision must do), this file is the
-building blocks a real answer to those jobs is made of. Nothing here is
-wired into `Gateway.decide` by default — see agent/gateway.py's own module
+building blocks a real answer to those jobs is made of. Gateway uses successor_of and cheap_mask; the remaining helpers are optional.
+The earlier starter was not wired into Gateway — see agent/gateway.py's own module
 docstring and agent/README.md's table for where each piece is meant to
 plug in. That wiring is the assignment, not a step you're missing.
 
